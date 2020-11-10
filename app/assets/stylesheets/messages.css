@@ -1,0 +1,53 @@
+a {
+  text-decoration: none;
+}
+
+.wrapper{
+  display: flex;
+  height: 100vh;
+}
+
+/*-------- サイドバー -----------*/
+
+.side-bar{
+  background-color: #253141;
+  width: 300px;
+}
+
+.side-header{
+  background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.side-main{
+  background-color: #2F3E51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+}
+
+
+/*-------- チャット -----------*/
+
+.chat{
+  background-color: #fff;
+  width: calc(100vw  - 300px);
+}
+
+.main-header{
+  background-color: #fff;
+  height: 100px;
+  padding: 0 40px;
+}
+
+.message{
+  background-color: #FAFAFA;
+  height: calc(100vh - 190px);
+  padding: 46px 40px 0;
+}
+
+.footer{
+  background-color: #DDD;
+  height: 90px;
+  padding: 20px 40px;
+}
