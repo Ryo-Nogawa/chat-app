@@ -45,6 +45,7 @@ a {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: auto;
 }
 
 .room{
@@ -67,16 +68,98 @@ a {
   background-color: #fff;
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left{
+  font-size: 24px;
+}
+
+.header-left a{
+  color: #333;
+}
+
+.header-right a{
+  border: 1px solid darkred;
+  padding: 20px;
+  color: darkred;
 }
 
 .message{
   background-color: #FAFAFA;
   height: calc(100vh - 190px);
   padding: 46px 40px 0;
+  overflow: auto;
+}
+
+.message-content{
+  margin-bottom: 40px;
+}
+
+.message-top{
+  display: flex;
+  padding: 10px 0;
+}
+
+.send-user{
+  color: #434A54;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.send-date{
+  color: #999;
+  font-size: 12px;
+}
+
+.send-message{
+  color: #434A54;
+  font-size: 14px;
 }
 
 .footer{
   background-color: #DDD;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
 }
+
+.form-input{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.form-message{
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+  height: 50px;
+}
+
+.form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.form-submit{
+  margin-left: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #38AEF0;
+  padding: 0 20px;
+  height: 50px;
+  border: none;
+}
+
