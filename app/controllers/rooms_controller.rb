@@ -1,6 +1,4 @@
 class RoomsController < ApplicationController
-  def index
-  end
 
   def new
     @room = Room.new
@@ -8,7 +6,7 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-    if @room.save
+    if @room.user_ids.length == 2 && @room.save
       redirect_to root_path
     else
       render :new
